@@ -1,0 +1,16 @@
+{
+  "name": "l2code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+   "start-server": "tsc && node build/server.js",
+   "start": "nodemon  -e ts -w ./ -x npm run start-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1"
+  }
+}
