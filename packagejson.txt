@@ -1,0 +1,9 @@
+ "scripts": {
+   "start-servr": "tsc && node build/server.js", //tsc ( typescript compiler ) to convert ( transpile ) ts files to js  //start server in one step
+    //start server js with node
+    // install nodemon  npm install nodemon -g watches the files for changes and restarts the application
+    "start": "nodemon  -e ts -w ./ -x npm run start-server"
+    // -e for file extentions to monitor in this case ts.
+    // -w for the folder to watch for changes in this case root dir (./)
+    // -x for script was want to execute. script starts server from the first step.
+  },
